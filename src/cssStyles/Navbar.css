@@ -1,0 +1,73 @@
+/* Navbar.css */
+.navbar {
+    background-color: #e4e2d8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    padding: 15px 20px;
+    background: linear-gradient(rgba(228, 226, 216, 0.1), rgba(228, 226, 216, 0.1));
+    /* Gradient de blending */
+    backdrop-filter: blur(10px);
+    /* Aplică un efect de blur pentru o tranzitie mai plăcută */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 100px;
+    /* Ajustează dimensiunile logo-ului după preferințe */
+    height: auto;
+    /* mix-blend-mode: multiply; */
+}
+
+
+.title-container {
+    justify-content: left;
+}
+
+.navbar-title {
+    font-family: 'Courier New', monospace;
+    /* Schimbă fontul în funcție de preferințe */
+    font-size: 50px;
+    /* Ajustează dimensiunea fontului */
+    margin: 0;
+    margin-left: -470px;
+    /* Elimină marginile implicite ale titlului */
+    color: #644f34;
+    /* Schimbă culoarea în funcție de designul tău */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-list li a {
+    color: #644f34;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+
+}
+
+.nav-list li a:hover {
+    background-color: #ccb393;
+}

@@ -1,0 +1,79 @@
+.about-us-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Courier New', monospace;
+    color: #422e12;
+    font-size: 28px;
+}
+
+.history,
+.staff-members {
+    margin-top: 20px;
+}
+
+.history h3,
+.staff-members h3 {
+    color: #422e12;
+    font-size: 28px;
+    font-family: 'Courier New', monospace;
+}
+
+p {
+    color: #5a3e24;
+    font-family: 'Courier New', monospace;
+    font-size: 22px;
+}
+
+.staff-members {
+    display: flex;
+    justify-content: space-between;
+    /* Ajustează în funcție de preferințe */
+    flex-wrap: no-wrap;
+    /* Acesta este modificatorul important pentru a preveni wrap-ul */
+}
+
+.staff-member {
+    width: 18%;
+    /* Ajustează în funcție de preferințe */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #f5f5f5;
+}
+
+.staff-member:hover {
+    transform: scale(1.05);
+}
+
+.staff-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border-bottom: 1px solid #ddd;
+}
+
+.staff-member p {
+    margin: 8px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+}
+
+.meet-our-members {
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+}
+
+.meet-our-members h3 {
+    color: #422e12;
+    font-family: 'Courier New', monospace;
+    margin-top: 20px;
+}
