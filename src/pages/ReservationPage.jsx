@@ -9,6 +9,8 @@ const ReservationPage = () => {
         date: '',
         time: '',
         name: '',
+        numberOfPeople: '',
+        phoneNumber: '',
         notes: '',
     });
 
@@ -27,6 +29,7 @@ const ReservationPage = () => {
             time: currentTime,
             name: '',
             numberOfPeople: '',
+            phoneNumber: '',
             notes: '',
         });
     }, []);
@@ -39,7 +42,7 @@ const ReservationPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await registerReservation(formData.date, formData.time, formData.name, formData.numberOfPeople, formData.notes);
+            await registerReservation(formData.date, formData.time, formData.name, formData.numberOfPeople, formData.phoneNumber, formData.notes);
             navigate("/");
         }
         catch (err) {
@@ -117,6 +120,20 @@ const ReservationPage = () => {
                             type="number"
                             name="numberOfPeople"
                             value={formData.numberOfPeople}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </label>
+                    <br />
+                    <label>
+                        Phone Number:
+                        <input
+                            type="tel"
+                            name="phoneNumber"
+                            pattern="[0-9]{10}"
+                            maxLength="10"
+
+                            value={formData.phoneNumber}
                             onChange={handleInputChange}
                             required
                         />
