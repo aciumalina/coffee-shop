@@ -1,5 +1,5 @@
 import React from 'react';
-import '../cssStyles/AboutUs.css';  // Poți crea și un fișier CSS separat pentru stilizare
+import '../cssStyles/AboutUs.css';
 
 const AboutUs = () => {
     return (

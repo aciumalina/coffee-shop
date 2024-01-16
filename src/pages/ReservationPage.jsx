@@ -15,15 +15,12 @@ const ReservationPage = () => {
     });
 
     useEffect(() => {
-        // Obține data curentă și ora curentă
         const currentDate = new Date().toISOString().split('T')[0];
         const currentTime = new Date().toTimeString().slice(0, 5);
 
-        // Setează valorile minime pentru date și timp
         document.getElementById('datePicker').min = currentDate;
         document.getElementById('timePicker').min = currentTime;
 
-        // Setează valorile implicite pentru data și timp
         setFormData({
             date: currentDate,
             time: currentTime,

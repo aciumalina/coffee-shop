@@ -26,9 +26,6 @@ const App = () => {
       if (user) {
         dispatch(setIsAuthenticated());
       }
-      else if (auth.currentUser != null && auth.currentUser.email === "admin@yahoo.com") {
-        dispatch(setIsAdmin());
-      }
       else {
         dispatch(clearUser());
       }

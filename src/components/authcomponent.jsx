@@ -9,25 +9,24 @@ const AuthComponent = () => {
     const dispatch = useDispatch();
 
     const handleSignupSuccess = (user) => {
-        // Dispașează acțiunea pentru a seta starea de autentificare în Redux
         dispatch(setIsAuthenticated());
         console.log('Signup success:', user);
     };
 
     const handleSignupError = (error) => {
         console.error('Signup error:', error);
-        // Poți gestiona eroarea în alt mod, dacă este necesar
+
     };
 
     const handleLoginSuccess = (user) => {
-        // Dispașează acțiunea pentru a seta starea de autentificare în Redux
+
         dispatch(setIsAuthenticated());
         console.log('Login success:', user);
     };
 
     const handleLoginError = (error) => {
         console.error('Login error:', error);
-        // Poți gestiona eroarea în alt mod, dacă este necesar
+
     };
 
     const handleSignupClick = () => {
