@@ -42,7 +42,7 @@
     margin: 0;
     margin-left: -470px;
     /* Elimină marginile implicite ale titlului */
-    color: #644f34;
+    color: #c4b8a9;
     /* Schimbă culoarea în funcție de designul tău */
 }
 
@@ -58,7 +58,7 @@
 }
 
 .nav-list li a {
-    color: #644f34;
+    color: #c4b8a9;
     font-family: 'Courier New', monospace;
     font-weight: bold;
     padding: 8px 12px;
@@ -69,5 +69,6 @@
 }
 
 .nav-list li a:hover {
-    background-color: #ccb393;
+    background-color: #c9b295;
+    color: #584021;
 }
