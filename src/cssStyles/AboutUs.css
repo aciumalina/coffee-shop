@@ -32,14 +32,11 @@ p {
 .staff-members {
     display: flex;
     justify-content: space-between;
-    /* Ajustează în funcție de preferințe */
     flex-wrap: no-wrap;
-    /* Acesta este modificatorul important pentru a preveni wrap-ul */
 }
 
 .staff-member {
     width: 18%;
-    /* Ajustează în funcție de preferințe */
     margin: 20px;
     padding: 10px;
     border-radius: 10px;

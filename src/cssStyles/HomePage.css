@@ -3,13 +3,9 @@
     margin: 0 auto;
     padding: 20px;
     height: 100vh;
-    /* Setează înălțimea la 100% din înălțimea vizibilă a ecranului */
     background-size: cover;
-    /* Ajustează dimensiunea imaginii de fundal pentru a acoperi complet containerul */
     background-position: center;
-    /* Centrează imaginea de fundal */
     background-repeat: no-repeat;
-    /* Asigură-te că imaginea de fundal nu se repetă */
 }
 
 .home-content {
@@ -17,7 +13,6 @@
     text-align: center;
     z-index: 1;
     max-width: 1100px;
-    /* Adaugă o lățime maximă pentru a împiedica întinderea excesivă */
     margin: 0 auto;
 }
 
@@ -31,10 +26,8 @@
 
 .home-content p {
     font-family: 'Courier New', monospace;
-    /* Alege un font cu aspect de scris de mână */
     font-size: 24px;
     font-weight: 1000;
-    /* Mărește dimensiunea fontului pentru a imita scrisul de mână */
     color: #000000;
     line-height: 1.6;
     margin-bottom: 15px;

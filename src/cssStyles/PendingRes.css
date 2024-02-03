@@ -6,7 +6,6 @@
     padding: 20px;
 }
 
-/* Stilizează lista de rezervări */
 .reservations-list {
     list-style-type: none;
     padding: 0;
@@ -20,18 +19,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Adaugă un pic de spațiu între detaliile rezervării */
 .reservation-item strong {
     margin-right: 5px;
 }
 
-/* Stilizează titlul */
+
 .page-title {
     text-align: center;
     color: #333;
 }
 
-/* Adaugă un pic de stil pentru mesajul de încărcare */
 .loading-message {
     text-align: center;
     margin-top: 20px;
