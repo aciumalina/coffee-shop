@@ -34,7 +34,7 @@ const OurReviewsPage = () => {
             await deleteDoc(doc(db, 'reviews', reviewId));
             setReviews((prevReviews) => prevReviews.filter((review) => review.id !== reviewId));
         } catch (error) {
-            console.error('Eroare la ștergerea recenziei:', error);
+            console.error('Error deleting the reviews:', error);
         }
     };
 

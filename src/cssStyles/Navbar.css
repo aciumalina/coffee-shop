@@ -1,4 +1,3 @@
-/* Navbar.css */
 .navbar {
     background-color: #e4e2d8;
     padding: 10px;
@@ -9,9 +8,7 @@
 
     padding: 15px 20px;
     background: linear-gradient(rgba(228, 226, 216, 0.1), rgba(228, 226, 216, 0.1));
-    /* Gradient de blending */
     backdrop-filter: blur(10px);
-    /* Aplică un efect de blur pentru o tranzitie mai plăcută */
     position: fixed;
     top: 0;
     left: 0;
@@ -24,9 +21,8 @@
 
 .logo {
     width: 100px;
-    /* Ajustează dimensiunile logo-ului după preferințe */
     height: auto;
-    /* mix-blend-mode: multiply; */
+
 }
 
 
@@ -36,14 +32,10 @@
 
 .navbar-title {
     font-family: 'Courier New', monospace;
-    /* Schimbă fontul în funcție de preferințe */
     font-size: 50px;
-    /* Ajustează dimensiunea fontului */
     margin: 0;
     margin-left: -470px;
-    /* Elimină marginile implicite ale titlului */
     color: #c4b8a9;
-    /* Schimbă culoarea în funcție de designul tău */
 }
 
 .nav-list {
