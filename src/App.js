@@ -13,7 +13,7 @@ import PrivateRoute from './components/privateroute';
 import PendingRes from './pages/PendingRes';
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { clearUser, setIsAuthenticated, setIsAdmin } from "./services/authSlice";
+import { clearUser, setIsAuthenticated } from "./services/authSlice";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./services/config"
 
@@ -44,7 +44,7 @@ const App = () => {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/ourreviews" element={<OurReviewsPage />} />
-        <Route element={<ProtectedRoute redirectTo="/" />}>
+        <Route element={<ProtectedRoute redirectTo="/login" />}>
           <Route path="/reservation" element={<ReservationPage />} />
           <Route path="/review" element={<ReviewPage />} />
         </Route>
