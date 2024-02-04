@@ -35,7 +35,8 @@ const LoginPage = () => {
     };
 
     const handleLoginSuccess = (user) => {
-        if (user.email === "admin@yahoo.com")
+        //pt a afla daca se logheaza adminul, il detectez dupa uid-ul stocat in firestore
+        if (user.uid === "y3XzAVEY0PO0gUhDkTLL4eNQ1k62")
             dispatch(setIsAdmin());
         else
             dispatch(setIsAuthenticated());
